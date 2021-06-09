@@ -1,0 +1,944 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>حسین حیدری | توسعه دهنده وب</title>
+    <!-- Required meta tags -->
+    <meta name="description" content="حسین حیدری طراح و توسعه دهنده وب">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Vue , Vuex, Front-End, Web Developer, طراح وب,برنامه نویس وب,حسین حیدری , طراح وب,حسین حیدری برنامه نویس,توسعه دهنده وب,برنامه نویس فرانت اند">
+    <meta name="author" content="حسین حیدری">
+    <meta name="copyright" content="حسین حیدری">
+    <meta name="url" content="https://www.hossein-heydari.ir">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/images/icon.png" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
+    <!-- Animate CSS-->
+    <link rel="stylesheet" href="assets/plugins/css/animate.css">
+    <!-- Owl Carousel CSS-->
+    <link rel="stylesheet" href="assets/plugins/css/owl.css">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+
+</head>
+
+<body dir="rtl" class="dark-vertion black-bg text-right">
+
+
+    <div id="myModal" class="modal" style="z-index: 100;">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="assets/images/front.jpg" id="img01">
+    </div>
+
+    <div id="myModal1" class="modal" style="z-index: 100;">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="assets/images/min.jpg" id="img02">
+    </div>
+
+    <div id="myModal2" class="modal" style="z-index: 100;">
+        <div class="container">
+            <div class="row" style="margin-bottom: 50px;">
+                <span class="close">&times;</span>
+                <div class="col-sm-12 col-md-6" style="padding: 5px 5px;">
+                    <img class="modal-content" src="assets/images/html.jpg" id="img03" style="width: 100%; height: 100%;">
+                </div>
+                <div class="col-sm-12 col-md-6" style="padding: 5px 5px;">
+                    <img class="modal-content" src="assets/images/css.jpg" id="img03" style="width: 100%; height: 100%;">
+                </div>
+                <div class="col-sm-12 col-md-6" style="padding: 5px 5px;">
+                    <img class="modal-content" src="assets/images/jquery.jpg" id="img03" style="width: 100%; height: 100%;">
+                </div>
+                <div class="col-sm-12 col-md-6" style="padding: 5px 5px;">
+                    <img class="modal-content" src="assets/images/javascript.png" id="img03" style="width: 100%; height: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Start Loader -->
+    <div class="section-loader">
+        <div class="loader">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- End Loader -->
+
+    <!--
+        ===================
+           NAVIGATION
+        ===================
+        -->
+    <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg mh-nav nav-btn">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon icon"></span>
+                        </button>
+
+                    <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#mh-home" style="font-size: 15px;">خانه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mh-about" style="font-size: 15px;">درباره من</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mh-skills" style="font-size: 15px;">مهارت ها</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mh-experience" style="font-size: 15px;">تجربیات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mh-portfolio" style="font-size: 15px;">نمونه کار</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mh-contact" style="font-size: 15px;">تماس با من</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--
+        ===================
+            HOME 
+        ===================
+        -->
+    <section class="mh-home home-2-img image-bg" id="mh-home">
+        <div class="img-foverlay img-color-overlay">
+            <div class="container">
+                <div class="row xs-column-reverse section-separator vertical-middle-content home-padding">
+                    <div class="col-sm-6">
+                        <div class="mh-header-info">
+                            <div class="mh-promo wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                                <span style="font-size: 0.75rem;">برنامه نویس</span>
+                            </div>
+
+                            <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">حسین حیدری</h2>
+                            <br>
+                            <h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">طراح و توسعه دهنده وب</h4>
+
+                            <ul>
+                                <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i class="fa fa-envelope"></i><a href="mailto:admin@hossein-heydari.ir">&nbsp;&nbsp;admin@hossein-heydari.ir</a></li>
+                                <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i class="fa fa-phone"></i><a href="tel:+989012688990">&nbsp;&nbsp;98-9012688990+</a></li>
+                                <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i class="fa fa-map-marker"></i><address>&nbsp;&nbsp;ایران ، تهران</address></li>
+                            </ul>
+
+                            <ul class="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                <li><a href="tg://resolve?domain=hossein_heydari79"><i class="fa fa-telegram"></i></a></li>
+                                <li><a href="https://instagram.com/hossein_heydari79_"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/hossein-heydari-7085931b8"><i class="fa fa-linkedin-square"></i></a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=989012688990"><i class="fa fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="hero-img wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                            <div class="img-border">
+                                <img src="assets/images/hero.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        ==================
+            ABOUT
+        =================
+        -->
+    <section class="mh-about" id="mh-about">
+        <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div class="row section-separator">
+                <div class="col-sm-12 col-md-6">
+                    <div class="mh-about-img shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                        <img src="assets/images/ab-img.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="mh-about-inner">
+                        <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s" style="font-size: 1.75rem;">درباره من</h2>
+                        <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">حسین حیدری هستم دانشجو کارشناسی رشته علوم کامپیوتر از دانشگاه سراسری قم .
+                            <br> متولد 1379 ساکن غرب استان تهران هستم ، چند سالی هست که تو حوزه ی برنامه نویسی فعالیت میکنم از جمله در عرصه ی بازی سازی ، توسعه ی اپلیکیشن های اندروید ، طراحی و توسعه ی وب .</p>
+                        <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <ul>
+                                <li><span>Vuetify</span></li>
+                                <li><span>Vuex</span></li>
+                                <li><span>Vue</span></li>
+                                <li><span>Javascript</span></li>
+                                <li><span>Html & Css</span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        ===================
+           SERVICE
+        ===================
+        -->
+    <section class="mh-service">
+        <div class="container">
+            <div class="row section-separator">
+                <div class="col-sm-12 text-center section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                    <h2 style="font-size: 1.75rem;">چه کاری انجام میدهم</h2>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+
+                        <h3><i class="fa fa-code iron-color"></i>برنامه نویسی وب</h3>
+                        <p>
+                            بنده چند سالی هست که برنامه نویسی وب انجام میدم و علاقه ام به همین سمت است ، به همین خاطر یک سال است که تصمیم گرفتم به صورت جدی و تخصصی این مسیر رو ادامه بدم .
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        ===================
+           SKILLS
+        ===================
+        -->
+    <section class="mh-skills" id="mh-skills">
+        <div class="container">
+            <div class="row section-separator">
+                <!-- <div class="section-title text-center col-sm-12">
+                   
+                </div> -->
+                <div dir="rtl" class="col-sm-12 col-md-12 text-right float-right">
+                    <div class="mh-skills-inner">
+                        <div class="mh-professional-skill wow fadeInUp " data-wow-duration="0.8s" data-wow-delay="0.3s" style="padding: 0px;">
+                            <h3 style="text-align: center;">مهارت های حرفه ای</h3>
+                            <div class="each-skills">
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6">
+
+                                            <div class="candidatos">
+                                                <div class="parcial">
+                                                    <div class="info">
+                                                        <div class="percentagem-num">95%</div>
+                                                        <div class="nome">HTML</div>
+                                                    </div>
+                                                    <div dir="rtl" class="progressBar text-right float-right">
+                                                        <div d class="percentagem text-right float-right wow" style="width: 95%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="candidatos">
+                                                <div class="parcial">
+                                                    <div class="info">
+                                                        <div class="nome">CSS</div>
+                                                        <div class="percentagem-num">95%</div>
+                                                    </div>
+                                                    <div dir="rtl" class="progressBar">
+                                                        <div class="percentagem wow" style="width: 95%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="candidatos">
+                                                <div class="parcial">
+                                                    <div class="info">
+                                                        <div class="nome">Bootstrap</div>
+                                                        <div class="percentagem-num">95%</div>
+                                                    </div>
+                                                    <div class="progressBar">
+                                                        <div class="percentagem wow" style="width: 95%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="candidatos">
+                                                <div class="parcial">
+                                                    <div class="info">
+                                                        <div class="nome">Sass</div>
+                                                        <div class="percentagem-num">90%</div>
+                                                    </div>
+                                                    <div class="progressBar">
+                                                        <div class="percentagem wow" style="width: 90%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="candidatos">
+                                                <div class="parcial">
+                                                    <div class="info">
+                                                        <div class="nome">Javascript</div>
+                                                        <div class="percentagem-num">80%</div>
+                                                    </div>
+                                                    <div class="progressBar ">
+                                                        <div class="percentagem wow" style="width: 80%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="candidatos">
+                                                <div class="parcial">
+                                                    <div class="info">
+                                                        <div class="nome">Vuejs</div>
+                                                        <div class="percentagem-num">95%</div>
+                                                    </div>
+                                                    <div class="progressBar ">
+                                                        <div class="percentagem wow" style="width: 95%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="candidatos">
+                                                <div class="parcial">
+                                                    <div class="info">
+                                                        <div class="nome">Vuex</div>
+                                                        <div class="percentagem-num">90%</div>
+                                                    </div>
+                                                    <div class="progressBar">
+                                                        <div class="percentagem wow" style="width: 90%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+
+                                            <div class="candidatos">
+                                                <div class="parcial">
+                                                    <div class="info">
+                                                        <div class="nome">Vuetify</div>
+                                                        <div class="percentagem-num">80%</div>
+                                                    </div>
+                                                    <div class="progressBar ">
+                                                        <div class="percentagem wow" style="width: 80%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="candidatos">
+                                                <div class="parcial">
+                                                    <div class="info">
+                                                        <div class="nome">jQuery</div>
+                                                        <div class="percentagem-num">95%</div>
+                                                    </div>
+                                                    <div class="progressBar ">
+                                                        <div class="percentagem wow" style="width: 95%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="candidatos">
+                                                <div class="parcial">
+                                                    <div class="info">
+                                                        <div class="nome">Ajax</div>
+                                                        <div class="percentagem-num">90%</div>
+                                                    </div>
+                                                    <div class="progressBar ">
+                                                        <div class="percentagem wow" style="width: 90%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="candidatos">
+                                                <div class="parcial">
+                                                    <div class="info">
+                                                        <div class="nome">SEO</div>
+                                                        <div class="percentagem-num">70%</div>
+                                                    </div>
+                                                    <div class="progressBar ">
+                                                        <div class="percentagem wow" style="width: 70%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="candidatos">
+                                                <div class="parcial">
+                                                    <div class="info">
+                                                        <div class="nome">WP</div>
+                                                        <div class="percentagem-num">95%</div>
+                                                    </div>
+                                                    <div class="progressBar ">
+                                                        <div class="percentagem wow" style="width: 95%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="candidatos">
+                                                <div class="parcial">
+                                                    <div class="info">
+                                                        <div class="nome">Git</div>
+                                                        <div class="percentagem-num">95%</div>
+                                                    </div>
+                                                    <div class="progressBar ">
+                                                        <div class="percentagem wow" style="width: 95%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div dir="rtl" class="col-sm-12 col-md-12 text-right float-right">
+                    <div class="mh-professional-skills wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s" style="padding: 0; margin-top: 150px !important;">
+                        <h3 style="text-align: center;">مهارت های شخصی</h3>
+                        <ul class="mh-professional-progress">
+
+
+                            <div class="contianer">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6" style="display: flex; justify-content: center; align-items: center;">
+                                        <li>
+                                            <div class="mh-progress mh-progress-circle" data-progress="100"></div>
+                                            <div class="pr-skill-name">ارتباطات</div>
+                                        </li>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6" style="display: flex; justify-content: center; align-items: center;">
+                                        <li>
+                                            <div class="mh-progress mh-progress-circle" data-progress="95"></div>
+                                            <div class="pr-skill-name">کار گروهی</div>
+                                        </li>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6" style="display: flex; justify-content: center; align-items: center;">
+                                        <li>
+                                            <div class="mh-progress mh-progress-circle" data-progress="80"></div>
+                                            <div class="pr-skill-name">مدیریت پروژه</div>
+                                        </li>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6" style="display: flex; justify-content: center; align-items: center;">
+                                        <li>
+                                            <div class="mh-progress mh-progress-circle" data-progress="70"></div>
+                                            <div class="pr-skill-name">خلاقیت</div>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        ===================
+           EXPERIENCES
+        ===================
+        -->
+    <section class="mh-experince" id="mh-experience">
+        <div class="bolor-overlay">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-education">
+                            <h3 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" style="text-align: center;">تحصیلات</h3>
+                            <div class="mh-education-deatils">
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12" style="margin-top: 30px;">
+                                            <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                                <h6 style="line-height: 30px;">مدرسه استعداد های درخشان علامه حلی ملارد</h6>
+                                                <div class="mh-eduyear">1391-1397</div>
+                                                <!-- <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12" style="margin-top: 30px;">
+                                            <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                                <h6 style="line-height: 30px;">دانشجوی کارشناسی رشته علوم کامپیوتر از دانشگاه سراسری قم</h6>
+                                                <div class="mh-eduyear">1397-1401</div>
+                                                <!-- <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p> -->
+                                            </div>
+                                        </div>
+                                        <h3 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" style="text-align: center; margin-top: 80px; width: 100%;">تجربیات</h3>
+                                        <div class="col-sm-12 col-md-12" style="margin-top: 10px;">
+                                            <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                                <h6 style="line-height: 30px;">مصاحبه با چندین شرکت در سمت توسعه دهنده فرانت اند</h6>
+                                                <!-- <div class="mh-eduyear">1397-1401</div> -->
+                                                <!-- <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p> -->
+                                            </div>
+                                            <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s" style="margin-bottom: 50px;">
+                                                <h6 style="line-height: 30px;">کار کردن با چندین تیم به صورت فریلنسرینگ</h6>
+                                                <!-- <div class="mh-eduyear">1397-1401</div> -->
+                                                <!-- <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Education Institutes-->
+
+                                <!-- Education Institutes-->
+
+                                <!-- Education Institutes-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h3 style="text-align: center;" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">مدارک</h3>
+                        <div class="mh-project-gallery col-sm-12 wow fadeInUp" id="project-gallery" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <div class="row">
+                                <div class="grid-item col-md-12 col-sm-12 col-xs-12" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                    <figure id="myImg">
+                                        <img src="assets/images/front.jpg" alt="Front-End">
+                                        <figcaption class="fig-caption ">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Front-End Web Developer Certificate</h5>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="grid-item col-md-12 col-sm-12 col-xs-12" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                    <figure id="myImg2" style="cursor: pointer;">
+                                        <img src="assets/images/javascript.png" alt="Vue.js">
+                                        <figcaption class="fig-caption ">
+                                            <i class="fa fa-search "></i>
+                                            <h5 class="title">Front-End Web Developer Certificate</h5>
+                                            <!-- <span class="sub-title "></span> -->
+                                            <!-- <a data-fancybox data-src="#mh "></a> -->
+                                            <!-- <a href="https://fanjou.ir "></a> -->
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="grid-item col-md-12 col-sm-12 col-xs-12" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                    <figure id="myImg1">
+                                        <img src="assets/images/min.jpg" alt="Vue.js">
+                                        <figcaption class="fig-caption ">
+                                            <i class="fa fa-search "></i>
+                                            <h5 class="title">Vue.js Developer Certificate</h5>
+                                            <!-- <span class="sub-title "></span> -->
+                                            <!-- <a data-fancybox data-src="#mh "></a> -->
+                                            <!-- <a href="https://fanjou.ir "></a> -->
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        ===================
+           PORTFOLIO
+        ===================
+        -->
+    <section class="mh-portfolio" id="mh-portfolio">
+        <div class="container">
+            <div class="row section-separator">
+                <div class="section-title col-sm-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                    <h3 style="font-size: 1.75rem;">نمونه کار</h3>
+                </div>
+                <div class="part col-sm-12" style="height: 300px;">
+                    <div class="portfolio-nav col-sm-12" id="filter-button">
+                        <ul>
+                            <li data-filter="*" class="current wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"> <span>همه دسته بندی ها</span></li>
+                            <li data-filter=".user-interface" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span>html & css</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="mh-project-gallery col-sm-12 wow fadeInUp" id="project-gallery" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                        <div class="portfolioContainer row">
+                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
+                                <figure>
+                                    <img src=" assets/images/portfolio/fanjou.png " alt="Fanjou.ir ">
+                                    <figcaption class="fig-caption ">
+                                        <i class="fa fa-search "></i>
+                                        <h5 class="title ">Fanjou.ir</h5>
+                                        <span class="sub-title ">تیمی خلاق و پر قدرت</span>
+                                        <!-- <a data-fancybox data-src="#mh "></a> -->
+                                        <a href="https://fanjou.ir "></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End: .grid .project-gallery -->
+                </div>
+                <!-- End: .part -->
+            </div>
+            <!-- End: .row -->
+        </div>
+        <!-- <div dir="rtl " class="mh-portfolio-modal " id="mh ">
+            <div dir="rtl " class="container ">
+                <div class="row mh-portfolio-modal-inner ">
+                    <div dir="rtl " class="col-sm-5 text-right ">
+                        <h2 class="text-right "><a href="https://fanjou.ir ">Fanjou.ir</a></h2>
+                        <p>فنجو ، متشکل از 6 نفر یک تیم پرانگیزه است که به مدت یک سال در عرصه ی مهارت آموزی فعالیت دارد</p>
+
+                       
+                        <div class="mh-about-tag ">
+                            <ul>
+                                <li><span>html</span></li>
+                                <li><span>css</span></li>
+                                <li><span>bootstrap</span></li>
+                                <li><span>Javascript</span></li>
+                                <li><span>django</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://fanjou.ir " class="btn btn-fill ">دیدن سایت</a>
+                    </div>
+                    <div class="col-sm-7 ">
+                        <div class="mh-portfolio-modal-img ">
+                            <img src="assets/images/portfolio/fanjou.png " alt=" " class="img-fluid ">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <!--
+        ===================
+           PRICING
+        ===================
+        -->
+    <!-- <section class="mh-pricing " id="mh-pricing ">
+        <div class=" ">
+            <div class="container ">
+                <div class="row section-separator ">
+                    <div class="col-sm-12 section-title " data-wow-duration="0.8s " data-wow-delay="0.2s ">
+                        <h3>قیمت گذاری</h3>
+                    </div>
+                    <div class="col-sm-12 col-md-4 ">
+                        <div class="mh-pricing dark-bg shadow-2 wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.3s ">
+                            <i class="fa fa-calendar "></i>
+                            <h4>کار تمام وقت</h4>
+                            <p>من برای تمام وقت در دسترس هستم</p>
+                            <h5>15 میلیون</h5>
+                            <ul>
+                                <li>توسعه وب</li>
+                                <li>توسعه بازی</li>
+                                <li>نوشتن موسیقی</li>
+                            </ul>
+                            <a href="# " class="btn btn-fill ">من را استخدام کن</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 ">
+                        <div class="mh-pricing dark-bg shadow-2 wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.5s ">
+                            <i class="fa fa-file "></i>
+                            <h4>پروژه قیمت ثابت</h4>
+                            <p>من برای نقش های ثابت در دسترس هستم</p>
+                            <h5>5 میلیون</h5>
+                            <ul>
+                                <li>توسعه وب</li>
+                                <li>توسعه بازی</li>
+                                <li>نوشتن موسیقی</li>
+                            </ul>
+                            <a href="# " class="btn btn-fill ">من را استخدام کن</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 ">
+                        <div class="mh-pricing dark-bg shadow-2 wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.7s ">
+                            <i class="fa fa-hourglass "></i>
+                            <h4>به صورت پاره وقت</h4>
+                            <p>من به صورت پاره وقت در دسترس هستم</p>
+                            <h5>500 هزار تومن</h5>
+                            <ul>
+                                <li>توسعه وب</li>
+                                <li>توسعه بازی</li>
+                                <li>نوشتن موسیقی</li>
+                            </ul>
+                            <a href="# " class="btn btn-fill ">من را استخدام کن</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!--
+        ===================
+           BLOG
+        ===================
+        -->
+    <!-- <section class="mh-blog " id="mh-blog ">
+        <div class="container ">
+            <div class="row section-separator ">
+                <div class="col-sm-12 section-title wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.2s ">
+                    <h3>پست های برتر وبلاگ</h3>
+                </div>
+                <div class="col-sm-12 col-md-4 ">
+                    <div class="mh-blog-item dark-bg wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.3s ">
+                        <img src="assets/images/b-3.png " alt=" " class="img-fluid ">
+                        <div class="blog-inner ">
+                            <h2><a style="line-height: 2; " href="# ">لورم ایپسوم متن ساختگی با تولید سادگی.</a></h2>
+                            <div class="mh-blog-post-info ">
+                                <ul>
+                                    <li><strong>تاریخ ارسال :</strong><a href="# ">98/7/21</a></li>
+                                    <li><strong> توسط :</strong><a href="# "> تیرتاشی ریکا </a></li>
+                                </ul>
+                            </div>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است... </p>
+                            <a href="# ">بیشتر..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 ">
+                    <div class="mh-blog-item dark-bg wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.5s ">
+                        <img src="assets/images/b-2.png " alt=" " class="img-fluid ">
+                        <div class="blog-inner ">
+                            <h2><a style="line-height: 2; " href="# ">لورم ایپسوم متن ساختگی با تولید سادگی.</a></h2>
+                            <div class="mh-blog-post-info ">
+                                <ul>
+                                    <li><strong>تاریخ ارسال :</strong><a href="# ">98/7/21</a></li>
+                                    <li><strong> توسط :</strong><a href="# "> تیرتاشی ریکا </a></li>
+                                </ul>
+                            </div>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است...</p>
+                            <a href="# ">بیشتر..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 ">
+                    <div class="mh-blog-item dark-bg wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.7s ">
+                        <img src="assets/images/b-1.png " alt=" " class="img-fluid ">
+                        <div class="blog-inner ">
+                            <h2><a style="line-height: 2; " href="# ">لورم ایپسوم متن ساختگی با تولید سادگی.</a></h2>
+                            <div class="mh-blog-post-info ">
+                                <ul>
+                                    <li><strong>تاریخ ارسال :</strong><a href="# ">98/7/21</a></li>
+                                    <li><strong> توسط :</strong><a href="# "> تیرتاشی ریکا </a></li>
+                                </ul>
+                            </div>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است...</p>
+                            <a href="# ">بیشتر..</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!--
+        ===================
+           TESTIMONIALS
+        ===================
+        -->
+    <!-- <section class="mh-testimonial " id="mh-testimonial ">
+        <div class="home-v-img ">
+            <div class="container ">
+                <div class="row section-separator ">
+                    <div class="col-sm-12 section-title wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.2s ">
+                        <h3>مشتریان</h3>
+                    </div>
+                    <div class="col-sm-12 wow fadeInUp " id="mh-client-review " data-wow-duration="0.8s " data-wow-delay="0.3s ">
+                        <div class="each-client-item ">
+                            <div class="mh-client-item dark-bg black-shadow-1 ">
+                                <img src="assets/images/c-1.png " alt=" " class="img-fluid ">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                                <h4>مریم</h4>
+                                <span>نویسنده و مدیرامل</span>
+                            </div>
+                        </div>
+                        <div class="each-client-item ">
+                            <div class="mh-client-item dark-bg black-shadow-1 ">
+                                <img src="assets/images/c-1.png " alt=" " class="img-fluid ">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                <h4>مریم</h4>
+                                <span>نویسنده و مدیرامل</span>
+                            </div>
+                        </div>
+
+                        <div class="each-client-item ">
+                            <div class="mh-client-item dark-bg black-shadow-1 ">
+                                <img src="assets/images/c-1.png " alt=" " class="img-fluid ">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                <h4>مریم</h4>
+                                <span>نویسنده و مدیرامل</span>
+                            </div>
+                        </div>
+                        <div class="each-client-item ">
+                            <div class="mh-client-item dark-bg black-shadow-1 ">
+                                <img src="assets/images/c-1.png " alt=" " class="img-fluid ">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                <h4>مریم</h4>
+                                <span>نویسنده و مدیرامل</span>
+                            </div>
+                        </div>
+                        <div class="each-client-item ">
+                            <div class="mh-client-item dark-bg black-shadow-1 ">
+                                <img src="assets/images/c-1.png " alt=" " class="img-fluid ">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                <h4>مریم</h4>
+                                <span>نویسنده و مدیرامل</span>
+                            </div>
+                        </div>
+
+                        <div class="each-client-item ">
+                            <div class="mh-client-item dark-bg black-shadow-1 ">
+                                <img src="assets/images/c-1.png " alt=" " class="img-fluid ">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                <h4>مریم</h4>
+                                <span>نویسنده و مدیرامل</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!--
+        ===================
+           FOOTER 1
+        ===================
+        -->
+    <footer class="mh-footer " id="mh-contact">
+        <div class="map-image image-bg">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <h3 style="font-size: 1.75rem;">تماس با من</h3>
+                    </div>
+                    <div class="col-sm-12 mh-footer-address">
+                        <div class="row">
+                            <!-- <div class="col-sm-12 col-md-4 ">
+                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.3s ">
+                                    <div class="each-icon ">
+                                        <i class="fa fa-location-arrow "></i>
+                                    </div>
+                                    <div class="each-info ">
+                                        <h4>آدرس</h4>
+                                        <address>
+                                                ایران مازندران بهشهر خ اشرفی <br> اصفهانی ک 9 
+
+                                            </address>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="col-sm-12 col-md-6">
+                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                    <div class="each-icon">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </div>
+                                    <div class="each-info">
+                                        <h4>ایمیل</h4>
+                                        <a href="mailto:admin@hossein-heydari.ir">admin@hossein-heydari.ir</a><br>
+                                        <a href="mailto:hosseinheydari790228@gmail.com">hosseinheydari790228@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp " data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                    <div class="each-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="each-info">
+                                        <h4>تلفن</h4>
+                                        <a href="tel:+989012688990">98-9012688990+</a><br>
+                                        <a href="tel:+989012688990">98-9198977746+</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                        <form class="single-form quate-form wow fadeInUp" id="app">
+                            <div class="row ">
+                                <div class="col-md-6 col-sm-12">
+                                    <input name="name" class="contact-name form-control" v-model="name" id="name" type="text" placeholder="نام " required>
+                                </div>
+                                <div class="col-md-6 col-sm-12 ">
+                                    <input name="family" class="contact-email form-control" v-model="family" id="family" type="text" placeholder="نام خانوادگی " required>
+                                </div>
+                                <div class="col-sm-12">
+                                    <input name="email" class="contact-subject form-control" v-model="email" id="email" type="email" placeholder="ایمیل " required>
+                                </div>
+                                <div class="col-sm-12">
+                                    <textarea name="text" class="contact-message" id="text" v-model="text" rows="6" placeholder="پیام شما .. " required></textarea>
+                                </div>
+                                <!-- Subject Button -->
+                                <div class="btn-form col-sm-12">
+                                    <button type="button" class="btn btn-fill btn-block" id="btn" ref="btn" disabled onclick="loadDoc()">ارسال پیام</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- <div class="col-sm-12 col-md-6 wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.5s ">
+                        <div class="mh-map ">
+                            <div id="mh-map " class="shadow-1 "></div>
+                        </div>
+                    </div> -->
+                    <div class="col-sm-12 mh-copyright wow fadeInUp " data-wow-duration="0.8s " data-wow-delay="0.3s ">
+                        <div class="row ">
+
+                            <div class="col-sm-12 text-center ">
+                                <p style="font-size: 13px; line-height: 30px;">تمامی حقوق مادی و معنوی این سایت متعلق به <strong style="color: #0BBBA0; ">حسین حیدری</strong> بوده و هر گونه کپی برداری از این سایت غیر اخلاقی می باشد .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--
+    ==============
+    * JS Files *
+    ==============
+    -->
+
+
+    <script src="assets/js/vue.min.js"></script>
+    <!-- jQuery -->
+    <script src="assets/plugins/js/jquery.min.js "></script>
+    <!-- popper -->
+    <script src="assets/plugins/js/popper.min.js "></script>
+    <!-- bootstrap -->
+    <script src="assets/plugins/js/bootstrap.min.js "></script>
+    <!-- owl carousel -->
+    <script src="assets/plugins/js/owl.carousel.js "></script>
+    <!-- validator -->
+    <script src="assets/plugins/js/validator.min.js "></script>
+    <!-- wow -->
+    <script src="assets/plugins/js/wow.min.js "></script>
+    <!-- mixin js-->
+    <script src="assets/plugins/js/jquery.mixitup.min.js "></script>
+    <!-- circle progress-->
+    <script src="assets/plugins/js/circle-progress.js "></script>
+    <!-- jquery nav -->
+    <script src="assets/plugins/js/jquery.nav.js "></script>
+    <!-- Fancybox js-->
+    <script src="assets/plugins/js/jquery.fancybox.min.js "></script>
+    <!-- isotope js-->
+    <script src="assets/plugins/js/isotope.pkgd.js "></script>
+    <script src="assets/plugins/js/packery-mode.pkgd.js "></script>
+    <!-- Map api -->
+    <!-- <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc "></script>
+    <script src="assets/js/map-init.js "></script> -->
+    <script src="assets/js/custom-scripts.js "></script>
+
+
+
+
+</body>
+
+</html>
